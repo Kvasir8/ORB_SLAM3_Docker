@@ -15,7 +15,7 @@ While executing the orbslam algorithm in the container, the following issue will
 
 - cd orbslam3_docker
 
-- ./build_container.sh
+- ./build_container_slam.sh
 
 Then, you can see the docker image is pulling from the dockerhub, and it builds the container from the image automatically. The bash script is to setting up the necessary commands for the container evnironment.
 
