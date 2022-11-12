@@ -43,8 +43,8 @@ To get into the docker container created just now, type the following:
 where we tag the container with interepid and detach it while it runs in the background.
 
 4. open another terminal and type:
-- **git clone https://gitlab.lrz.de/intrepid_EMM/bim-based-vi_slam.git**
-- **cd bim-based-vi_slam/orbslam3_docker**
+- **git clone https://github.com/Kvasir8/ORB_SLAM3_Docker.git**
+- **cd ORB_SLAM3_Docker/orbslam3_docker**
 - **docker cp ORB_SLAM3/ intrepid_orb3:/**
 
 In case that you want to get into the running container from the local machine, type the folllowing command:
