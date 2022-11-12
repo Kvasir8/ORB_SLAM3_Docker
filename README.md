@@ -83,6 +83,9 @@ In case of the ORB_SLAM3 is failed to load the yaml file, execute the following 
 
 **./build.sh**
 
+If it's working fine, it should display following:
+![orbslam_running](https://github.com/Kvasir8/ORB_SLAM3_Docker/blob/main/images/orbslam_running.png)
+
 (option)To test out ros images : ~/src/visual_slam/scripts$ python rosbag_play_test.py
 
 Again, make sure you are in docker container, so that you can run ORB Slam algorithm in the docker container.
@@ -118,6 +121,9 @@ Assume you already made the container from the image
 
 In case there's issue on displaying a window via Docker container, execute following command:
 - **xhost +local:docker**
+
+If it works normal, then it should display following:
+![orbslam_running](https://github.com/Kvasir8/ORB_SLAM3_Docker/blob/main/images/orbslam_running.png)
 
 ## Installing dependencies manuelly
 
