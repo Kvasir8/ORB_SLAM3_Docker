@@ -1,0 +1,54 @@
+# compilation and distribution
+__pycache__
+_ext
+*.pyc
+*.so
+*.pth
+maskrcnn_benchmark.egg-info/
+build/
+dist/
+pyth3.6/
+
+# pytorch/python/numpy formats
+*.pkl
+*.npy
+
+# ipython/jupyter notebooks
+*.ipynb
+**/.ipynb_checkpoints/
+
+# Editor temporaries
+*.swn
+*.swo
+*.swp
+*~
+
+# Pycharm editor settings
+.idea
+
+# media
+*.png
+*.jpg
+*.avi
+*.mov
+
+# project dirs
+/datasets
+/models
+
+cocoapi/images/
+cocoapi/annotations/
+cocoapi/results/
+cocoapi/external/
+.DS_Store
+
+cocoapi/MatlabAPI/analyze*/
+cocoapi/MatlabAPI/visualize*/
+cocoapi/MatlabAPI/private/maskApiMex.*
+
+cocoapi/PythonAPI/pycocotools/__init__.pyc
+cocoapi/PythonAPI/pycocotools/_mask.c
+cocoapi/PythonAPI/pycocotools/_mask.so
+cocoapi/PythonAPI/pycocotools/coco.pyc
+cocoapi/PythonAPI/pycocotools/cocoeval.pyc
+cocoapi/PythonAPI/pycocotools/mask.pyc

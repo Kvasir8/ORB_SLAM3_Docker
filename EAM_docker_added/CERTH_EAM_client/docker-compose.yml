@@ -1,0 +1,15 @@
+version: "3"
+services:
+  certh_client:
+    image: "certh_client:latest"
+    devices:
+      - "/dev/video0:/dev/video0"
+      - "/dev/video1:/dev/video1"
+      - "/dev/video2:/dev/video2"
+      - "/dev/video3:/dev/video3"
+      - "/dev/video4:/dev/video4"
+      - "/dev/video5:/dev/video5"
+    environment:
+      - IP_SEND_TO=195.251.117.59
+      - PORT_EAM=4567
+    command: bash -c "python3 -u certh_client.py"

@@ -1,0 +1,3 @@
+<launch>
+<node name = "vision_cvt" pkg="vision" type="certh_server.py" output="screen" respawn="true"/>
+</launch>

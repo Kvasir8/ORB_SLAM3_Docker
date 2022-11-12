@@ -1,0 +1,14 @@
+version: "3"
+services:
+  certh_server:
+    image: "certh_server:latest"
+    ports: 
+     - "4567:4567"
+    volumes:
+     - /tmp/.X11-unix:/tmp/.X11-unix
+    environment:
+     - DISPLAY=$DISPLAY 
+     - IP_REC_FROM=0.0.0.0
+     - PORT_EAM=4567
+    privileged: true
+    command: bash -c "python3 -u certh_server.py"

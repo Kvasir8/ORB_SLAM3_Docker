@@ -1,0 +1,49 @@
+version: "3"
+services:
+  certh_server:
+    image: "docker_eam:latest"
+    ports: 
+     - "4567:4567"
+    volumes:
+     - /tmp/.X11-unix:/tmp/.X11-unix
+    environment:
+     - DISPLAY=$DISPLAY 
+     - IP_REC_FROM=0.0.0.0
+     - PORT_EAM=4567
+    privileged: true
+    command: bash -c "python3 -u certh_server.py"
+    
+    
+  #jahaniam/orbslam3:ubuntu18_melodic_cpu:	# == certh_client
+    #build: .
+    #volumes:
+      #- /tmp/.X11-unix:/tmp/.X11-unix
+      #- ./eam_utils:/EAM_docker/eam_utils
+      #- ./ORB_SLAM.py:/EAM_docker/ORB_SLAM.py
+    #image: "docker_eam:latest"
+    #network_mode: "host"
+    #runtime: nvidia
+    #environment:
+      #- IP_KAFKA=intrepid01.diginext.fr
+      #- IP_KAFKA=195.251.117.59
+      #- PORT_KAFKA=9092
+      #- SERVER_IPS=195.251.117.64
+      #- SERVER_PORTS=23098
+      #- NVIDIA_VISIBLE_DEVICES=all
+      #- DISPLAY=$DISPLAY
+      #- NVIDIA_DRIVER_CAPABILITIES=all
+    #command: bash -c "python3 -u ORB_SLAM.py"
+
+#######
+  certh_server:
+    image: "certh_server:latest"
+    ports: 
+     - "4567:4567"
+    volumes:
+     - /tmp/.X11-unix:/tmp/.X11-unix
+    environment:
+     - DISPLAY=$DISPLAY 
+     - IP_REC_FROM=0.0.0.0
+     - PORT_EAM=4567
+    privileged: true
+    command: bash -c "python3 -u certh_server.py"
