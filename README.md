@@ -2,6 +2,8 @@
 - orbslam3_docker_contents : raw codes from the docker container for ORB_SLAM
 - CERTH_EAM_client_server/CERTH_EAM_client : code to execute client script in PC
 - Note: docker image can be found the dockerhub [here](https://hub.docker.com/repository/docker/gdbk1124/orbslam3_docker_tcp), where all dependencies for executing python script exist. (Thus, we don't need to start from the scratch to set the environment up.)
+# Working pipeline
+![working_pipeline](https://github.com/Kvasir8/ORB_SLAM3_Docker/blob/main/images/working_pipeline.png)
 
 ## Issue to be solved
 
@@ -123,7 +125,7 @@ In case there's issue on displaying a window via Docker container, execute follo
 - **xhost +local:docker**
 
 If it works normal, then it should display following:
-![orbslam_running](https://github.com/Kvasir8/ORB_SLAM3_Docker/blob/main/images/orbslam_running.png)
+![orbslam_running](https://github.com/Kvasir8/ORB_SLAM3_Docker/blob/main/images/orbslam_connection.png)
 
 ## Installing dependencies manuelly
 
