@@ -45,8 +45,8 @@ To get into the docker container created just now, type the following:
 where we tag the container with interepid and detach it while it runs in the background.
 
 4. open another terminal and type:
-- **git clone https://github.com/Kvasir8/ORB_SLAM3_Docker.git**
-- **cd ORB_SLAM3_Docker/orbslam3_docker**
+- **git clone https://github.com/Kvasir8/ slam_docker_container.git**
+- **cd  slam_docker_container/orbslam3_docker**
 - **docker cp ORB_SLAM3/ slam_container:/**
 
 In case that you want to get into the running container from the local machine, type the folllowing command:
