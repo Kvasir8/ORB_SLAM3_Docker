@@ -1,5 +1,3 @@
-# BIM-based VI_SLAM
-
 # File description
 - orbslam3_docker_contents : raw codes from the docker container for ORB_SLAM
 - CERTH_EAM_client_server/CERTH_EAM_client : code to execute client script in PC
