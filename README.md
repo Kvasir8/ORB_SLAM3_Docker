@@ -146,9 +146,6 @@ Also install realsense sdk 2.0:
 
 ## Reference: 
 
-- rosbag recording file [here](https://drive.google.com/drive/folders/1Ql-CqxX9xzk-axdcLj7F-jH8BA-1dO5b): 
-
-
 - https://stackoverflow.com/questions/50935373/display-a-window-through-docker-container
 
 - Intel RealSense ROS releases: https://dev.intelrealsense.com/docs/ros-wrapper
