@@ -125,7 +125,7 @@ In case there's issue on displaying a window via Docker container, execute follo
 - **xhost +local:docker**
 
 If it works normal, then it should display following:
-![orbslam_running](https://github.com/Kvasir8/ORB_SLAM3_Docker/blob/main/images/orbslam_connection_1.png)
+![orbslam_running](https://github.com/Kvasir8/slam_docker_container/blob/main/images/orbslam_connection_1.png)
 
 ## Installing dependencies manuelly
 
